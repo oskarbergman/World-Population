@@ -5,8 +5,11 @@
 
 SELECT country, 
        ROUND(last_year_population / country_land_area, 0) AS population_density
+
 FROM world_data_flatten
+
 ORDER BY population_density DESC
+
 LIMIT 5;
 ![Skärmavbild 2024-04-07 kl  17 32 02](https://github.com/oskarbergman/World-Population/assets/105347124/a929c61e-9d4a-4464-b722-16a7005e13b0)
 
