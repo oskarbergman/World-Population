@@ -4,6 +4,7 @@
 
 
 SELECT country, 
+
        ROUND(last_year_population / country_land_area, 0) AS population_density
 
 FROM world_data_flatten
